@@ -124,7 +124,7 @@ def Listen():
             speak("Ok sir")
             root.destroy()
             break
-
+#wrong change
 round = PhotoImage(file="BUTTON.png")
 B1=Button(root,image=round,bg="#C9EEFF",border=0,command=Listen).place(x=280,y=195)
 my_label=Label(root,text="",bg="#C9EEFF")
