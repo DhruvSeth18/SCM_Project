@@ -93,6 +93,8 @@ def Listen():
         elif 'open instagram' in query:
             webbrowser.open("instagram.com")
             print(query)
+        elif 'great AI' in query:
+            speak("Thank you sir , I am always there to held you")
 
         elif 'wikipedia' in query:
             speak("Searching on wikipedia...")
