@@ -127,6 +127,9 @@ def Listen():
             time2=int(datetime.datetime.now().hour)
             speak("the time is"+time2)
 
+        elif "sdfsavsfd" in query:
+            speak("vbdvjdbv")
+
         elif ('shutdown' in query) or ('stop listen' in query) or ("don't listen" in query):
             speak("Ok sir")
             root.destroy()
