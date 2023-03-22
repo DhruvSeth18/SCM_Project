@@ -7,6 +7,7 @@ import wikipedia
 import os
 import openai
 import pywhatkit as pwt
+import datetime
 
 
 root=Tk()
@@ -112,15 +113,21 @@ def Listen():
             speak("ok sir if you need me just ask ")
 
         elif 'good morning' in query:
-            speak("welcome sir")
+            speak("good morning sir! How may i help u.")
 
         elif 'good afternoon' in query:
-            speak("Welcome sir")
+            speak("good afternoon sir! How is your day going.")
 
         elif 'good evening' in query:
-            speak("welcomme sir")
+            speak("good evening sir! How is your day going.")
+
         elif 'good night' in query:
-            speak("welcome sir")
+            speak("Good night sir! how was your day spent?")
+
+        elif "what's the time?" in query:
+            time2=int(datetime.datetime.now().hour)
+            speak("the time is"+time2)
+
         elif ('shutdown' in query) or ('stop listen' in query) or ("don't listen" in query):
             speak("Ok sir")
             root.destroy()
