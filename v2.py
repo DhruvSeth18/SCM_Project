@@ -127,8 +127,8 @@ def Listen():
             time2=int(datetime.datetime.now().hour)
             speak("the time is"+time2)
 
-        elif "sdfsavsfd" in query:
-            speak("vbdvjdbv")
+        elif "sdfsavgsgsgesfd" in query:
+            speak("vbdvjdbfdgsgresadv")
 
         elif ('shutdown' in query) or ('stop listen' in query) or ("don't listen" in query):
             speak("Ok sir")
