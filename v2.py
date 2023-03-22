@@ -118,7 +118,8 @@ def Listen():
 
         elif 'good evening' in query:
             speak("welcomme sir")
-
+        elif 'good night' in query:
+            speak("welcome sir")
         elif ('shutdown' in query) or ('stop listen' in query) or ("don't listen" in query):
             speak("Ok sir")
             root.destroy()
