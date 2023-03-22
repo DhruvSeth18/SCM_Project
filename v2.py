@@ -63,7 +63,8 @@ def Listen():
             text = response.choices[0].message.content
             speak(text)
             print(query)
-
+        elif 'Hi' in query:
+            speak("Hi Sir Glad to see you again")
         elif 'hello' in query:
             speak("Hello Sir what can i do for you ")
             print(query)
@@ -126,9 +127,6 @@ def Listen():
         elif "what's the time?" in query:
             time2=int(datetime.datetime.now().hour)
             speak("the time is"+time2)
-
-        elif "sdfsavsfd" in query:
-            speak("vbdvjdbv")
 
         elif ('shutdown' in query) or ('stop listen' in query) or ("don't listen" in query):
             speak("Ok sir")
