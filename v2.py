@@ -62,7 +62,8 @@ def Listen():
             text = response.choices[0].message.content
             speak(text)
             print(query)
-
+        elif 'Hi' in query:
+            speak("Hi Sir Glad to see you again")
         elif 'hello' in query:
             speak("Hello Sir what can i do for you ")
             print(query)
